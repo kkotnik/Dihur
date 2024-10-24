@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dihur</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Dihur za Karlo</h1>
+        <div class="pet-status">
+            <p>Hunger: <span id="hunger">50</span></p>
+            <p>Energy: <span id="energy">50</span></p>
+            <p>Times Petted: <span id="petted-count">0</span></p>
+            <h2>Time Opened: <span id="timer">0</span> minutes</h2> <!-- Timer Element -->
+        </div>
+        <div class="pet" id="pet">
+            <img src="ferret.png" alt="My Ferret" id="pet-image">
+            <img id="happy-ferret" src="happy ferret.png" alt="Happy Ferret" style="display: none;"> <!-- Happy ferret image -->
+            <video id="dancing-ferret" width="200" style="display: none;" muted>
+                <source id="dancing-video-source" src="" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <img id="sleeping-ferret" src="ferret sleeping.jpg" alt="Sleeping Ferret" style="display: none;">
+        </div>
+        <div class="controls">
+            <button id="feed">Feed</button>
+            <button id="sleep">Sleep</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
